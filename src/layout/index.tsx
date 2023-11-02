@@ -10,6 +10,9 @@ const Index:FC = () => {
           <Link className="navbar_links" to="/memo">
             Memo
           </Link>
+          <Link className="navbar_links" to="/callback">
+            Callback
+          </Link>
           {/* <Link className="navbar_links" to="/add_page">Add Page</Link>
           <Link className="navbar_links" to='/fetch_page'>Fetch Page</Link> */}
         </nav>
