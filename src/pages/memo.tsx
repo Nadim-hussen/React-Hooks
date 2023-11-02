@@ -47,3 +47,10 @@ const expensiveCalculation = (num:number) => {
 };
 
 export default Memo
+
+
+
+// useCallback HOOk
+// To fix this, we can use the useCallback hook to prevent the function from being recreated unless necessary.
+
+// Use the useCallback Hook to prevent the Todos component from re-rendering needlessly:

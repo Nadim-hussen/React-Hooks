@@ -1,4 +1,4 @@
-import React, { useEffect, useState,FC } from 'react';
+import React, { useEffect, useState,FC, useLayoutEffect } from 'react';
 import { TaskInput } from '../types/effect'
 import '../css/effect.css'
  const MyComponent:FC = () => {
@@ -7,6 +7,12 @@ import '../css/effect.css'
 //     { name: 'John Doe', age: 12 },
 //     { name: 'Jane Doe', age: 14 },
 // ];
+  // useLayoutEffect(() => {
+  //   fetch('https://jsonplaceholder.typicode.com/posts')
+  //     .then(response => response.json())
+  //     .then(json => setData(json));
+  //     console.log('hello');
+  // }, []); //** use layout and useEffect are same but difference is useLayout avoid flikering.
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then(response => response.json())
