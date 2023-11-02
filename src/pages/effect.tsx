@@ -1,7 +1,6 @@
-import { log } from 'console';
 import React, { useEffect, useState,FC } from 'react';
 import { TaskInput } from '../types/effect'
-
+import '../css/effect.css'
  const MyComponent:FC = () => {
   const [data, setData] = useState<TaskInput[]>([]);
 //   const customers = [
@@ -32,10 +31,10 @@ import { TaskInput } from '../types/effect'
          <ol type='1'>
          {data.map(item => (
             <li key={item.id}>
-              {item.id} : {item.title}
+               {item.title}
               <button onClick={()=>{
                 changePage(item.id)
-              }}>show more</button>
+              }}>show more</button><br />
               </li>
            ))}
 
