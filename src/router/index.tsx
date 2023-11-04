@@ -4,6 +4,7 @@ import Home from '../pages/effect';
 import Navbar from '../layout/index';
 import Memo from '../pages/memo'
 import Reducer from '../pages/reducer'
+import Ref from '../pages/ref';
  const  Index:FC = () => {
 
     return(
@@ -15,6 +16,7 @@ import Reducer from '../pages/reducer'
                 <Route path="/" element={<Home />} />
                 <Route path="/memo" element={<Memo />} />
                 <Route path="/reducer" element={<Reducer />} />
+                <Route path="/ref" element={<Ref />} />
             </Routes>
             </main>
 

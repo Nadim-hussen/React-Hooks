@@ -1,4 +1,5 @@
-import React, { useEffect, useState,FC, useLayoutEffect } from 'react';
+// import React, { useEffect, useState,FC, useLayoutEffect } from 'react';
+import React, { useEffect, useState,FC } from 'react';
 import { TaskInput } from '../types/effect'
 import '../css/effect.css'
  const MyComponent:FC = () => {

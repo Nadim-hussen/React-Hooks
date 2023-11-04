@@ -1,20 +1,39 @@
-import { useRef,FC  } from "react";
-import ReactDOM from "react-dom/client";
+import { useRef,FC,useState } from "react";
+
 
 const Ref:FC = () => {
-  const inputElement = useRef<HTMLInputElement>();
-
+  const [text, setText] = useState<string>('')
+  const ref = useRef<HTMLInputElement>(null);
+  // useEffect(() => {
+  //   if (ref.current) {
+  //     ref.current.focus();
+  //   }
+  // }, []);
   const focusInput = () => {
-    if (inputElement.current) {
-        inputElement.current.focus();
-      }
+    if (ref.current) {
+      ref.current.focus();
+    }
 
   };
+  const saveText = () =>{
+    if(ref.current){
+      setText(ref.current.value);
+    }
+  }
+  const clearText = () =>{
+    if(ref.current){
+      setText('');
+      ref.current.value = ''
+    }
+  }
 
   return (
     <>
-      {/* <input type="text" ref:={inputElement} /> */}
+      <input ref={ref} />;
+      <div>{text}</div>
       <button onClick={focusInput}>Focus Input</button>
+      <button onClick={saveText}>Text</button>
+      <button onClick={clearText}>Clear</button>
     </>
   );
 }
