@@ -1,4 +1,6 @@
-import React, { useState, useMemo,FC } from "react";
+// useMemo vs useCallback :: when you are working with value use memo. But when you are working with function or child component use Callback
+
+import React, { useState, useMemo,FC, useCallback } from "react";
 
 const Memo:FC = () => {
   const [count, setCount] = useState(0);

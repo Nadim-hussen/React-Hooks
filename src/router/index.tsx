@@ -5,6 +5,7 @@ import Navbar from '../layout/index';
 import Memo from '../pages/memo'
 import Reducer from '../pages/reducer'
 import Ref from '../pages/ref';
+import Callback from '../pages/callback';
  const  Index:FC = () => {
 
     return(
@@ -17,6 +18,7 @@ import Ref from '../pages/ref';
                 <Route path="/memo" element={<Memo />} />
                 <Route path="/reducer" element={<Reducer />} />
                 <Route path="/ref" element={<Ref />} />
+                <Route path="/callback" element={<Callback />} />
             </Routes>
             </main>
 
