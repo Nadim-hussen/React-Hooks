@@ -1,4 +1,4 @@
-import React,{memo, useCallback} from 'react'
+import {memo} from 'react'
 type Props = {
     todos: string[],
     addTodo ?:  any,

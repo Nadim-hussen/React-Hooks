@@ -1,6 +1,6 @@
 // useMemo vs useCallback :: when you are working with value use memo. But when you are working with function or child component use Callback
 
-import React, { useCallback, useState } from 'react'
+import  { useCallback, useState } from 'react'
 import CallbackTodo from './callbackTodo'
 
 function Callback() {
