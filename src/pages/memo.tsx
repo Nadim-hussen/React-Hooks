@@ -5,6 +5,7 @@ import React, { useState, useMemo,FC, useCallback } from "react";
 const Memo:FC = () => {
   const [count, setCount] = useState(0);
   const [todos, setTodos] = useState<string[]>([]); // string list/array
+  // const calculation = expensiveCalculation(count);
   const calculation = useMemo(() => expensiveCalculation(count), [count]);
 
   // for using use memo we no longer have delay in adding todo list.
